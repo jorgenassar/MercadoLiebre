@@ -57,39 +57,41 @@
         <section class="nombre-nuevo">
         <label for="name" name="name">
             
-            <input type="text" id="name" placeholder="Nombre y Apellido">
+            <input type="text" id="name" placeholder="Nombre y apellido" class="registro-nombre">
         </label>
     </section>
         <!-- <span>El nombre debe tener más de 2 carcatéres</span> -->
-        <section class="usuario-nuevo">
+        <section >
         <label for="username" name="username">
-            <input type="text" id="username" placeholder="usuario">
+            <input type="text" id="username" placeholder="Correo electrónico" class="usuario-nuevo">
         </label>
     </section>
-        <section class="dob">
-        <label for="dob" name="DOB">
-            Fecha de Nacimiento:
-            <input type="date" id="dob" >
+        <section >
+        <label for="dob" name="DOB" class="dob-label">
+            Fecha de Nacimiento
+            <input type="date" id="dob" class="dob">
         </label>
     </section>
-        <section class="domicilio">
+        <section >
         <label for="home-address" name="home-address">
-            <input type="text" id="home-adress" placeholder="dirección de tu casa">
+            <input type="text" id="home-adress" placeholder="dirección de tu casa" class="domicilio">
         </label>
     </section>
     <section class="perfil">
-        <legend>¿Qué quieres hacer en MercadoLiebre?</legend>
-        <div>
-            <label for="comprar">Comprar</label>
+        <legend class="perfil-legend">Tipo de Usuario</legend>
+        <div class="opciones-tipo-usuario">
+        <div >
             <input type="radio" id="comprar" name="user-profile" value="Comprar">
+            <label for="comprar">Comprar</label>
         </div>
         <div>
-            <label for="vender">Vender</label>
             <input type="radio" id="vender" name="user-profile" value="Vender">
+            <label for="vender">Vender</label>
+        </div>
         </div>
     </section>
         <section class="intereses">
-            <label for="intereses">¿Cuáles son tus intereses?</label>
+            <label for="intereses" class="intereses-label">Intereses</label>
             <div>
                 <input type="checkbox" name="intereses" value="electro"> 
                 Electrónicos
@@ -116,12 +118,12 @@
             <input type="file" id="foto" name="foto">
         </section>
         <section class="password">
-            <label for="password">Crea una contraseña</label>
-            <input type="password" id="password" name="password">
+            <label for="password"></label>
+            <input type="password" id="password" name="password" placeholder="Crea una contraseña" class="registro-contrasena">
         </section>
         <section class="password-confirm">
-            <label for="password-confirm">Confirma la contraseña</label>
-            <input type="password" id="password-confirm" name="password-confirm">
+            <label for="password-confirm"></label>
+            <input type="password" id="password-confirm" name="password-confirm" placeholder="Confirma la contraseña" class="registro-contrasena">
         </section>
         <section class="botones-registro">
         <button type="submit">Enviar</button>
