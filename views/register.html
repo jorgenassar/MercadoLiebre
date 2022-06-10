@@ -54,6 +54,9 @@
     <div><img src='images/img-home-banner.jpg' alt="Banner Navidad" class="banner"></div>
     <main class="registro">
     <form action="/register" method="POST" class="registro">
+        <label>
+        <h1 class="crear">¡Crea tu cuenta!</h1>
+        </label>
         <section class="nombre-nuevo">
         <label for="name" name="name">
             
@@ -114,7 +117,7 @@
             </div>
         </section>
         <section class="foto">
-            <label for="foto">Sube una foto para tu perfil</label>
+            <label for="foto" class="foto-label">Sube una foto para tu perfil</label>
             <input type="file" id="foto" name="foto">
         </section>
         <section class="password">
@@ -126,8 +129,8 @@
             <input type="password" id="password-confirm" name="password-confirm" placeholder="Confirma la contraseña" class="registro-contrasena">
         </section>
         <section class="botones-registro">
-        <button type="submit">Enviar</button>
-        <button type="reset">Borrar Todo</button>
+        <button type="submit" class="enviar-registro">Enviar</button>
+        <button type="reset" class="enviar-registro">Borrar</button>
         </section>
         
         </form>
